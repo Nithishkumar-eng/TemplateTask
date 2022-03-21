@@ -1,0 +1,98 @@
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    margin: 3% 20%;
+    align-content: flex-start;
+}
+nav{
+    background-color: white;
+    padding:0px 24px;
+}
+a{
+    text-decoration: none;
+    padding: 2px 14px;
+    color: black;
+}
+a:hover{
+    background-color: rgb(48, 103, 221);
+    color: white;
+}
+.blog{
+    background-color: rgba(235, 162, 28, 0.822);
+    color: white;
+    border-radius: 8px;
+}
+.search-icon{
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding:0px 5px;
+}
+.search-icon > span{
+    color: white;
+    padding: 4px;
+    background-color: rgba(255, 166, 0, 0.685);
+}
+/*cover image*/
+
+.img-cover{
+    background-size: contain;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+/* HEADER */
+h2{
+    color: rgb(5, 71, 97);
+    font-size: 36px;
+    text-align: center;
+    font-family: sans-serif;
+}
+/* CONTENTS */
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid aqua;
+}
+.content-box{
+    text-align: center;
+    padding: 4px 20px;
+    border: 1px solid darkgray;
+}
+.content-box:hover{
+    background-color: rgb(4, 54, 38);
+    color: white;
+}
+.flex-1{
+    flex-grow: 1;
+}
+
+.flex-2{
+    flex-grow: 2;
+}
+.flex-3{
+    flex-grow: 3;
+}
+.icons{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+.icons > div{
+    padding: 0px 4px;
+    text-align: center;
+}
+/* CARDS */
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px 10px;
+    margin: 2% 20%;
+}
+.card-item{
+    width: 200px;
+    height: 120px;
+    background-color: darkgray;
+}
