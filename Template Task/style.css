@@ -1,24 +1,22 @@
-
+/* NAVBAR */
 .nav-container{
     display: flex;
     flex-direction: row;
-    margin: 0% 15%;
+    justify-content: center;
     font-family:serif;
-    align-content: flex-start;
-    align-items: flex-start;
     padding: 8px;
 }
 nav{
     background-color: white;
-    padding:0px 24px;
 }
 .logo{
     width: 15%;
     height: 100%;
     object-fit: cover;
 }
-a{
+nav > a{
     text-decoration: none;
+    font-weight: 500;
     padding: 8px 14px;
     color: black;
 }
@@ -30,15 +28,17 @@ a:hover{
     background-color: rgba(235, 162, 28, 0.822);
     color: white;
     border-radius: 8px;
+    padding: 2px 8px;
 }
 .search-icon{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding:8px 5px;
+    padding:1px 8px;
+    text-align: end;
 }
 .search-icon > span{
     padding: 2px;
+    border-radius: 50%;
     color: white;
     background-color: rgba(255, 166, 0, 0.685);
 }
@@ -106,6 +106,28 @@ h2{
     padding: 0px 4px;
     text-align: center;
 }
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-item{
+    padding: 4px 2px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
 /* CARDS */
 .card{
     display: grid;
@@ -125,21 +147,137 @@ h2{
     left: 40%;
     font-size: 36px;
     color: white;
+    
+}
+.lorem p{
+    text-align: center;
+    background-color: darkgray;
+    font-size:  15px;
+
+}
+.eye{
+    text-align: center;
 }
 /* NAVIGATOR */
 .navigator{
-
     display: flex;
     flex-direction: row;
-    justify-items: center;
+    justify-content: center;
+}
+.nav-item > a{
+    text-decoration: none;
+    color: white;
+   
+    font-weight: 500;
+    font-weight: bold;
+}
+.nav-item{
     background-color: rgb(51, 100, 236);
-    left: 40%;
-    padding: 2px 4px;
-    text-align: center;
-    width: 160px;
+    padding: 8px ;
     border-radius: 5px;
 }
-.navigator > a{
+/* CLIENT CONTAINER */
+.client-container {
+    text-align: center;
+    padding: 4px;
+    border: 1px solid aqua;
+    border-left: 0;
+    border-right: 0;
+}
+.client-container > h2{
+    text-align: center;
+    color: rgb(11, 173, 173);
+    font-size: 36px;
+}
+.clients{
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+}
+/* TESTIMONIALS */
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 4px 0px;
+}
+.testimonials > h4{
+    margin: 0% 15%;
+}
+/* FOOTER CONTAINER */
+footer{
+    background-color: rgb(1, 21, 31);
+    
+} 
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0% 10%;
     color: white;
+}
+.footer-container a{
+    color: blue;
+}
+.f-head{
+    text-align: start;
+    font-size: 20px;
+    color: rgb(124, 82, 4);
+}
+.width{
+    width: 15%;
+}
+.m4{
+    margin-left: 20px;
+}
+.border-bottom{
+    border-bottom: 1px solid lightgray;
+}
+label,input{
+    width:100%;
+   
+    padding: 4px 0px;
+}
+.align{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.button{
+    margin-top: 3px;
+    text-align: end;
+}
+.button > button{
+    padding: 4px;
+    color: black;
+    outline: none;
+    border: 0;
     font-weight: bold;
+    border-radius: 2px;
+    background-color: rgb(9, 72, 190);
+    color: white;
+}
+.project-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 4px;
+    margin: 2px 0px;
+}
+footer p{
+    padding:4px 0px;
+    margin: 0;
+}
+.white-box{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+}
+i{
+    padding: 0px 4px;
+}
+.contact{
+    padding: 4px;
 }
