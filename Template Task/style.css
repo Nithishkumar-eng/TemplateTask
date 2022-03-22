@@ -2,16 +2,24 @@
 .nav-container{
     display: flex;
     flex-direction: row;
-    margin: 3% 20%;
+    margin: 0% 15%;
+    font-family:serif;
     align-content: flex-start;
+    align-items: flex-start;
+    padding: 8px;
 }
 nav{
     background-color: white;
     padding:0px 24px;
 }
+.logo{
+    width: 15%;
+    height: 100%;
+    object-fit: cover;
+}
 a{
     text-decoration: none;
-    padding: 2px 14px;
+    padding: 8px 14px;
     color: black;
 }
 a:hover{
@@ -24,23 +32,37 @@ a:hover{
     border-radius: 8px;
 }
 .search-icon{
-    align-items: flex-start;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding:0px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:8px 5px;
 }
 .search-icon > span{
+    padding: 2px;
     color: white;
-    padding: 4px;
     background-color: rgba(255, 166, 0, 0.685);
 }
 /*cover image*/
-
 .img-cover{
-    background-size: contain;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.img-cover > img{
     object-fit: cover;
+    background-size: cover;
     width: 100%;
-    height: auto;
+    height: 400px;
+    opacity: 0.8;
+}
+.portfolio{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    color: rgb(252, 252, 252);
+    font-weight: bolder;
+    font-size: 73px;
+    font-family: monospace;
 }
 /* HEADER */
 h2{
@@ -103,4 +125,21 @@ h2{
     left: 40%;
     font-size: 36px;
     color: white;
+}
+/* NAVIGATOR */
+.navigator{
+
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    background-color: rgb(51, 100, 236);
+    left: 40%;
+    padding: 2px 4px;
+    text-align: center;
+    width: 160px;
+    border-radius: 5px;
+}
+.navigator > a{
+    color: white;
+    font-weight: bold;
 }
